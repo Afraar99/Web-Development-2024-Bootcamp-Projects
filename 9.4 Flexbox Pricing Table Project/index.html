@@ -9,23 +9,29 @@
   <style>
     body {
       font-family: 'Sono', sans-serif;
+      /* display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh; */
     }
     .pricing-plan {
       background-color: #f2f2f2;
       margin: 20px;
       padding: 20px;
       text-align: center;
+      flex: 1;
       
     }
     .pricing-container {
       display: flex;
       justify-content: center;
       align-items: center;
-      
+      height: 100vh;
+      gap: 1rem;
     }
     .plan-title {
       font-weight: bolder;
-      font-size: large;
+      font-size: x-large;
     }
     .plan-price {
       font-size: 3rem;
@@ -34,6 +40,7 @@
     ul {
       list-style: none;
     }
+
     .plan-button {
       background-color: #ff6600;
       color: #f2f2f2;
@@ -41,11 +48,15 @@
       border-radius: 5px;
       padding: 10px;
     }
-
+    .plan-features > li {
+      margin-bottom: 20px;
+    }
 
     /* Hint: What can you do with a media query and flexbox? */
     @media (max-width: 1250px) {
-      
+      .pricing-container {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
